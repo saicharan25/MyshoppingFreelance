@@ -113,7 +113,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 String message = data.getString("message");
                 switch (status) {
                     case 0:
-                     
+                        Toast.makeText(MainActivity.mContext, message, Toast.LENGTH_LONG).show();
+
+                        Toast.makeText(MainActivity.mContext, "message: "+message, Toast.LENGTH_LONG).show();
                         return;
                     case 1:
                         String str;
