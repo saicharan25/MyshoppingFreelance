@@ -302,11 +302,8 @@ public class Fragmentfood extends Fragment implements BaseSliderView.OnSliderCli
                         world.add(worldpop);
                         // Populate spinner with country names
                         worldlist.add(jsonobject.optString("city"));
-                        Log.d("city","city:"+jsonobject.optString("city"));
+                        Log.d("city", "city:" + jsonobject.optString("city"));
                     }
-
-
-
                 }
 
                 return true;
