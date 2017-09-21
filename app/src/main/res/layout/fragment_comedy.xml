@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.msahakyan.shopping.fragment.FragmentComedy">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/movie_icon_container_height"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/movie_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/movie_genre"
+            android:src="@drawable/movie_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding_default"
+            android:text="@string/comedy_movies"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_viewfortopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:scrollbars="none" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <cn.lightsky.infiniteindicator.InfiniteIndicator
+        android:id="@+id/indicator_default_circle"
+        app:indicator_type="indicator_anim_circle"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Furniture"/>
+
+    <Button
+        android:id="@+id/recentviewall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="3dp"
+        android:layout_marginRight="5dp"
+        android:text="View All"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFF"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:scrollbars="none" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Dresses"/>
+
+        <Button
+            android:id="@+id/marriageprofilesall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="View All"
+            android:textColor="#FFF"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/layout_padding_default"
+        android:text="Offers and Coupons"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/colorAccent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_coupon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="400dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>
+</ScrollView>

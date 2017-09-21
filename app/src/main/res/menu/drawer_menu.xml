@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android">
+    <item
+        app:id="@+id/profile"
+        app:icon="@drawable/ic_account_grey600_36dp"
+        app:title="@string/profile" />
+    <item
+        app:id="@+id/changepassword"
+        app:icon="@drawable/ic_pencil_grey600_36dp"
+        app:title="@string/changepassword" />
+    <item
+        app:id="@+id/logout"
+        app:icon="@drawable/ic_logout_grey600_36dp"
+        app:title="@string/logout" />
+    <item
+        app:id="@+id/fr1"
+        app:icon="@drawable/ic_account_grey600_36dp"
+        app:title="@string/shopping" />
+    <item
+        app:id="@+id/fr2"
+        app:icon="@drawable/ic_pencil_grey600_36dp"
+        app:title="@string/food_drinks" />
+    <item
+        app:id="@+id/fr3"
+        app:icon="@drawable/ic_logout_grey600_36dp"
+        app:title="@string/local_services" />
+
+</menu>

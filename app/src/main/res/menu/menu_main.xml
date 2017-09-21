@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto"
+
+    xmlns:app="http://schemas.android.com/apk/res/android">
+    <item
+        app:icon="@drawable/ic_magnify_black_24dp"
+        app:id="@+id/action_favorite"
+        app:showAsAction="ifRoom|always"
+        app:title="HI" />
+    <item
+        app:icon="@drawable/ic_cart_black_24dp"
+        app:id="@+id/mag"
+        app:showAsAction="ifRoom|always"
+        app:title="hiii" />
+
+</menu>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res/android"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent"
+    app:orientation="vertical">
+
+    <LinearLayout
+        app:clickable="true"
+        app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        app:layout_height="wrap_content"
+        app:layout_width="match_parent"
+        app:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            app:background="@color/colorPrimary"
+            app:id="@+id/toolbar"
+            app:layout_alignParentTop="true"
+            app:layout_height="wrap_content"
+            app:layout_width="match_parent">
+
+            <LinearLayout
+                app:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                app:layout_height="match_parent"
+                app:layout_width="match_parent"
+                app:orientation="horizontal">
+
+                <ImageView
+                    app:id="@+id/backimage"
+                    app:layout_height="match_parent"
+                    app:layout_width="wrap_content"
+                    app:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+                <TextView
+                    app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    app:id="@id/title"
+                    app:layout_height="match_parent"
+                    app:layout_marginLeft="20dp"
+                    app:layout_width="wrap_content"
+                    app:text="@string/my_profile_update"
+                    app:textColor="#fff"
+                    app:textSize="@dimen/header_font_size_extra_large"
+                    app:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            app:clickable="true"
+            app:gravity="center"
+            app:layout_height="wrap_content"
+            app:layout_marginLeft="30dp"
+            app:layout_marginRight="30dp"
+            app:layout_width="match_parent"
+            app:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:id="@+id/profile_image"
+                app:layout_height="100dp"
+                app:layout_marginTop="30dp"
+                app:layout_width="100dp"
+                app:src="@drawable/common" />
+
+            <android.support.design.widget.TextInputLayout
+                app:layout_height="wrap_content"
+                app:layout_marginTop="10dp"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:hint="@string/name"
+                    app:id="@+id/et_name"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:hint="@string/gender"
+                    app:id="@+id/et_gender"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:id="@+id/input_layout_password"
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:focusable="false"
+                    app:hint="@string/dob"
+                    app:id="@+id/et_dob"
+                    app:inputType="textUri|textEmailSubject|textLongMessage|textPostalAddress|textVisiblePassword|textFilter|textWebEmailAddress|numberPassword|datetime|date|time"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:hint="@string/city"
+                    app:id="@+id/et_city"
+                    app:inputType="text"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:id="@+id/til_locality"
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent"
+                app:visibility="gone">
+
+                <EditText
+                    app:hint="@string/locality"
+                    app:id="@+id/et_locality"
+                    app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:id="@+id/input_layout_email"
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:hint="@string/pin_code"
+                    app:id="@+id/et_pin_code"
+                    app:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:layout_height="wrap_content"
+                app:layout_width="match_parent">
+
+                <EditText
+                    app:hint="address"
+                    app:id="@+id/et_address"
+                    app:inputType="text"
+                    app:layout_height="wrap_content"
+                    app:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                app:background="@drawable/button_radius_red"
+                app:id="@+id/btn_update"
+                app:layout_height="wrap_content"
+                app:layout_marginBottom="50dp"
+                app:layout_marginTop="30dp"
+                app:layout_width="match_parent"
+                app:text="@string/update"
+                app:textColor="#fff"
+                app:textSize="16dp"
+                app:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

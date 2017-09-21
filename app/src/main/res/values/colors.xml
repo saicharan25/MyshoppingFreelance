@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a51e2a</color>
+    <color name="colorPrimaryDark">#a51e2a</color>
+    <color name="colorAccent">#a51e2a</color>
+    <color name="list_group_title">#808080</color>
+    <color name="list_item_title">#AAAAAA</color>
+
+    <color name="group_divider_color">#80CBC4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_ash">#757373</color>
+    <color name="client_color">#a51e2a</color>
+    <color name="colorSecondary">@color/client_color</color>
+    <color name="lime">#E6EE9C</color>
+    <color name="orange">#FFCC80</color>
+    <color name="grey">#B0BEC5</color>
+    <color name="purple">#a51e2a</color>
+    <color name="pink">#a51e2a</color>
+    <color name="black">#000000</color>
+    <color name="gray_dark">#808080</color>
+</resources>

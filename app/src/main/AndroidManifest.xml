@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.devexchanges.navvp">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="info.devexchanges.navvp.main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- SMS Receiver -->
+        <receiver android:name="info.devexchanges.navvp.main.SmsReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service -->
+        <service
+            android:name="info.devexchanges.navvp.services.HttpService"
+            android:exported="false" />
+
+        <activity
+            android:name="info.devexchanges.navvp.home.MainActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="info.devexchanges.navvp.main.WelcomeActivity"
+            android:theme="@style/AppTheme2" />
+
+        <activity
+            android:name="info.devexchanges.navvp.main.ForgotPassword"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="info.devexchanges.navvp.main.OTPVerifyActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name="info.devexchanges.navvp.main.SmsActivity" />
+        <activity
+            android:name="info.devexchanges.navvp.main.LoginActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="info.devexchanges.navvp.main.MyProfileActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="info.devexchanges.navvp.main.Signup"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="info.devexchanges.navvp.home.DesActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name="info.devexchanges.navvp.splash.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.devexchanges.navvp.main.ChangePasswordActivity"
+            android:theme="@style/AppTheme2"></activity>
+        <activity
+            android:name="info.devexchanges.navvp.main.FullDetails"
+            android:theme="@style/AppTheme2"></activity>
+    </application>
+
+</manifest>
